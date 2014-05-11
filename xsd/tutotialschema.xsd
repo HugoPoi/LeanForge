@@ -27,12 +27,11 @@
 					  <xsd:element name="languages">
 			        <xsd:complexType>
 			          <xsd:sequence>
-                  <xsd:element name="language" type="codinglang" minOccurs="1" maxOccurs="unbounded"/>
+                  <xsd:element name="codinglang" type="codinglang" minOccurs="1" maxOccurs="unbounded"/>
 			          </xsd:sequence>
 			        </xsd:complexType>
             </xsd:element>
 					  <xsd:element name="plateforms" type="xsd:string"/>
-					  <xsd:element name="keywords" type="xsd:string"/>
 					  <xsd:element name="categories">
 			        <xsd:complexType>
 			          <xsd:sequence>
@@ -40,12 +39,14 @@
 			          </xsd:sequence>
 			        </xsd:complexType>
             </xsd:element>
+            <xsd:element name="keywords" type="xsd:string"/>
 				  </xsd:sequence>
 				  </xsd:complexType>
 			  </xsd:element>
 			  <xsd:element name="content" minOccurs="1" maxOccurs="unbounded">
 				  <xsd:complexType>
 				    <xsd:sequence>
+              <xsd:element name="title" type="xsd:string"/>
 					    <xsd:element name="step" minOccurs="1" maxOccurs="20">
 					      <xsd:complexType>
 					      <xsd:sequence>
