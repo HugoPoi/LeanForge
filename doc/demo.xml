@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <tutorial>
   <meta>
-    <software>
-      <name id="software"><![CDATA[Software Name]]></name>
+    <software id="software">
+      <name><![CDATA[Software Name]]></name>
       <website href="http://official.website.com"><![CDATA[Software Website]]></website>
     </software>
     <keywords>java,install,keyword1</keywords>
-    <category>testing</category>
-    <plateform>windows</plateform>
-    <languages>java</languages>
+    <categories>
+      <category>testing</category>
+    </categories>
+    <plateforms>windows</plateforms>
+    <languages>
+      <codinglang>java</codinglang>
+    </languages>
   </meta>
   <content lang="en">
     <title><![CDATA[Tutorial Name]]></title>
