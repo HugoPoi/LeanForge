@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<tutorial>
+  <meta>
+    <software>
+      <name id="software"><![CDATA[Software Name]]></name>
+      <website href="http://official.website.com"><![CDATA[Software Website]]></website>
+    </software>
+    <keywords>java,install,keyword1</keywords>
+    <category>testing</category>
+    <plateform>windows</plateform>
+    <languages>java</languages>
+  </meta>
+  <content lang="en">
+    <title><![CDATA[Tutorial Name]]></title>
+    <step name="First Step">
+      <substep><![CDATA[
+        My first text line. <a class="btn" href="http://download.software.com/">Download</a>
+      ]]></substep>
+      <substep><![CDATA[
+        Unzip the downloaded file.
+      ]]></substep>
+      <substep><![CDATA[
+        Launch executable file "sample.exe"
+      ]]></substep>
+    </step>
+    <step name="Second Step">
+      <substep><![CDATA[
+        Go to the configuration menu
+      ]]></substep>
+      <substep><![CDATA[
+        Configure this settings : .
+      ]]></substep>
+      <substep><![CDATA[
+        Then click on start button.
+      ]]></substep>
+    </step>
+  </content>
+</tutorial>
