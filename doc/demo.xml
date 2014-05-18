@@ -14,11 +14,36 @@
     </categories>
     <keywords><![CDATA[java,install,keyword1]]></keywords>
   </meta>
-  <content lang="en">
+  <content lang="en-US">
     <title><![CDATA[Tutorial Name]]></title>
     <step name="First Step">
       <substep><![CDATA[
-        My first text line. <a class="btn" href="http://download.software.com/">Download</a>
+        My first text line. <a class="btn btn-default" href="http://download.software.com/">Download</a>
+      ]]></substep>
+      <substep><![CDATA[
+        Unzip the downloaded file.
+      ]]></substep>
+      <substep><![CDATA[
+        Launch executable file "sample.exe"
+      ]]></substep>
+    </step>
+    <step name="Second Step">
+      <substep><![CDATA[
+        Go to the configuration menu
+      ]]></substep>
+      <substep><![CDATA[
+        Configure this settings : .
+      ]]></substep>
+      <substep><![CDATA[
+        Then click on start button.
+      ]]></substep>
+    </step>
+  </content>
+  <content lang="fr-FR">
+    <title><![CDATA[Installation Maven]]></title>
+    <step name="First Step">
+      <substep><![CDATA[
+        My first text line. <a class="btn btn-default" href="http://download.software.com/">Download</a>
       ]]></substep>
       <substep><![CDATA[
         Unzip the downloaded file.
