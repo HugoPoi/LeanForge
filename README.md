@@ -1,18 +1,30 @@
-=== Core Project Lean Forge ===
+#Core Project Lean Forge
 
 La plateforme Lean Forge apportera des atouts simples, accessibles et rapide pour avancer rapidement dans l'utilisation de logiciel d'aide au dévelopement. La plateforme s'articulera autour d'un site web.
 
-=== état d'avancement ===
+##Maquette
 
-Maquette réalisé avec Pencil : http://pencil.evolus.vn/Default.html
+Maquette réalisé avec Pencil : http://pencil.evolus.vn/Default.html  
 Vous pouvez nous aider à améliorer les écrans existants faire des propositions avec Pencil.
 
-=== Fournir un atout ===
+* L'écran tutorial version 2 a été retenu.
+
+##Fournir un tutoriel
 
 Vous devrez fournir votre "tutoriel" au format XML qui respectera un format précis.
-Voir dans le dossier doc.
+Ce format est définit dans un fichier de Schema XSD ([TutorialSchema.xsd](https://github.com/HugoPoi/LeanForge/blob/master/xsd/tutotialschema.xsd "Consulter le schema")). Vous pouvez consulter 2 exemples présent dans le [dossier doc](https://github.com/HugoPoi/LeanForge/tree/master/doc) `demo.xml` et `maven-installation.xml`.
 
-Demo de vérification d'un fichier : http://www.utilities-online.info/xsdvalidation/?save=2e1ddd7d-6b76-45da-aad9-d574bb1cb6ac-xsdvalidation
+![step display](./doc/step-display.png)
+
+* Chaque fichier correspond à un tutoriel exemple: Installation de Maven sous Windows = 1 fichier xml
+* Le XML est divisé en 2 parties : `<meta>` => information générale, `<content>` => le contenu du tutoriel
+* Les `<step>` correspondent à des pages générer dans l'ordre
+* Les `<substep>` sont des sous-étapes qui sont situé sur la même page
+* Vous pouvez intercalé des `<img>`, `<slider>`, `<multiimg>`, `<code>`, `<video>`, `<btn>`
+![elements disponible](./doc/possible-elements.png)
+* Vous pouvez valider votre XML via http://www.utilities-online.info/xsdvalidation/?save=9636daaf-1752-4ef2-994a-00a89c4b949d-xsdvalidation
+* Le format gère le multi lang vous pouvez définir une balise `<content>` par langue (dans l'idéale fr-FR et en-US)
+
 
 === Liens utiles ===
 
