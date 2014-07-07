@@ -17,11 +17,12 @@ Ce format est définit dans un fichier de Schema XSD ([TutorialSchema.xsd](https
 
 * Chaque fichier correspond à un tutoriel exemple: Installation de Maven sous Windows = 1 fichier xml
 * Le XML est divisé en 2 parties : `<meta>` => information générale, `<content>` => le contenu du tutoriel
+* Vous devez mettre au moins une balise `<content>` avec la `lang="fr-FR"`
 * Les `<step>` correspondent à des pages générer dans l'ordre
 * Les `<substep>` sont des sous-étapes qui sont situé sur la même page
-* Vous pouvez intercalé des `<img>`, `<slider>`, `<multiimg>`, `<code>`, `<video>`, `<btn>` entre les `<substep>`
+* Vous devez insérer une balise de type `<text>`,`<img>`, `<slider>`, `<multiimg>`, `<code>`, `<video>`, `<btn>` par `<substep>`
 ![elements disponible](./doc/possible-elements.png)
-* Vous pouvez valider votre XML via http://www.utilities-online.info/xsdvalidation/?save=9636daaf-1752-4ef2-994a-00a89c4b949d-xsdvalidation
+* Vous pouvez valider votre XML via http://www.utilities-online.info/xsdvalidation/?save=d2a19ddc-9d9a-4b14-8022-d2bb9b661e91-xsdvalidation
 * Le format gère le multi lang vous pouvez définir une balise `<content>` par langue (dans l'idéale fr-FR et en-US)
 * Vous devez mettre votre contenu de type string dans des balises d'échappements : `<![CDATA[votre texte]]>`
 
